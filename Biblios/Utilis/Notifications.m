@@ -1,0 +1,36 @@
+//
+//  Notifications.m
+//  Biblios
+//
+
+#import "Notifications.h"
+
+@implementation Notifications
+
+    NSString * const REQUEST_COMPLETED_NOTIFICATION             = @"REQUEST_COMPLETED";
+    NSString * const REQUEST_FAILED_NOTIFICATION                = @"REQUEST_FAILED";
+    NSString * const DATA_AVAILABLE_NOTIFICATION                = @"DATA_AVAILABLE";
+    NSString * const LOCATION_DATA_AVAILABLE_NOTIFICATION       = @"LOCATION_DATA_AVAILABLE_NOTIFICATION";
+    NSString * const USER_LOCATION_AVAILABLE_NOTIFICATION       = @"USER_LOCATION_AVAILCABLE_NOTIFICATION";
+    NSString * const LOCATION_DATA_UNAVAILABLE_NOTIFICATION     = @"LOCATION_DATA_UNAVAILABLE_NOTIFICATION";
+    NSString * const REQUEST_DATA_UNAVAILABLE_NOTIFICATION      = @"REQUEST_DATA_UNAVAILABLE_NOTIFICATION";
+    NSString * const LIBRARY_LIST_LOADING_COMPLETED             = @"LIBRARY_LIST_LOADING_COMPLETED";
+    NSString * const LIBRARY_LIST_LOADING_FAILED                = @"LIBRARY_LIST_LOADING_FAILED";
+    NSString * const START_MONITORING_LOCATION_NOTIFICATION     = @"START_MONITORING_LOCATION_NOTIFICATION";
+    NSString * const STOP_MONITORING_LOCATION_NOTIFICATION      = @"STOP_MONITORING_LOCATION_NOTIFICATION";
+    
+    NSString * const NOTIFICATION_DATA_KEY                      = @"DATA_KEY";
+    NSString * const NOTIFICATION_KEY_REQUEST_URL               = @"NOTIFICATION_KEY_REQUEST_URL";
+    NSString * const NOTIFICATION_KEY_REQUEST_TYPE              = @"NOTIFICATION_KEY_REQUEST_TYPE";
+    NSString * const NOTIFICATION_KEY_REQUEST_FAILURE_REASON    = @"NOTIFICATION_KEY_REQUEST_FAILURE_REASON";
+
+
+
+
++(NSDictionary *) notificationUserInfo:(id) data;
+{
+    NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]init];
+    [userInfo setObject:data forKey:NOTIFICATION_DATA_KEY];
+    return  userInfo;
+}
+@end

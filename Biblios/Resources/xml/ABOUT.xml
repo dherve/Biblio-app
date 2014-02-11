@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<texts>
+    <about>This application allows to locate montreal public libraries, find more information about each library and search for books. The application has been developed as a part time project and is not intended to be distributed or selled. Currently only OS 5 and later are supported. The data about libraries comes from montreal open Montreal ouvert (http://montrealouvert.net/?lang=en) and for location it uses google maps APIS.
+The application has no any affiliation with montreal city or any of its libraries.
+    </about>
+    <!-- should be like this
+     <about>
+        <fr></fr>
+        <en></en>
+     </about>
+     -->
+</texts>
